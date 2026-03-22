@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -n \"Lorem\\\\|Example@\\\\|Person Name\\\\|travisa@example\\\\|+01234567890\" /Users/rod/Downloads/Travisa/*.html)",
+      "Bash(grep -n \"Our Services\" /Users/rod/Downloads/Travisa/*.html)",
+      "Bash(sed -i '' 's|data-wow-delay=\"\"0.1s\"\">About Us</h1>|data-wow-delay=\"\"0.1s\"\">About Us</h3>|g' /Users/rod/Downloads/Travisa/about.html)",
+      "Bash(sed -i '' 's|data-wow-delay=\"\"0.1s\"\">Our Services</h1>|data-wow-delay=\"\"0.1s\"\">Our Services</h3>|g' /Users/rod/Downloads/Travisa/service.html)",
+      "Bash(sed -i '' 's|data-wow-delay=\"\"0.1s\"\">Testimonial</h1>|data-wow-delay=\"\"0.1s\"\">Testimonial</h3>|g' /Users/rod/Downloads/Travisa/testimonial.html)",
+      "Bash(sed -i '' 's|data-wow-delay=\"\"0.1s\"\">Contact Us</h1>|data-wow-delay=\"\"0.1s\"\">Contact Us</h3>|g' /Users/rod/Downloads/Travisa/contact.html)",
+      "Bash(sed -i '' 's|data-wow-delay=\"\"0.1s\"\">Offices</h1>|data-wow-delay=\"\"0.1s\"\">Offices</h3>|g' /Users/rod/Downloads/Travisa/office.html)",
+      "Bash(grep -l \"<!-- Footer End -->\" /Users/rod/Downloads/Travisa/*.html)",
+      "Bash(grep -n \"Person Name\\\\|travisa@example\\\\|+01\\\\|Example@\\\\|email\\\\|Diplometic\" /Users/rod/Downloads/Travisa/*.html)",
+      "Bash(grep -l \"href=\"\"#\"\"\" *.html)",
+      "Bash(grep -h 'href=\"\"\"\"[^\"\"\"\"]*\"\"\"\"' *.html)",
+      "Bash(for f:*)",
+      "Bash(do echo:*)",
+      "Read(//Users/rod/Downloads/Travisa/**)",
+      "Bash(done)"
+    ]
+  }
+}
