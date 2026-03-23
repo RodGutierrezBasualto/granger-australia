@@ -1,4 +1,17 @@
 
+/*** Color Overrides ***/
+:root {
+    --bs-secondary: #1A7DC4;
+    --bs-secondary-rgb: 26, 125, 196;
+}
+
+.text-secondary { color: #1A7DC4 !important; }
+.bg-secondary { background-color: #1A7DC4 !important; }
+.border-secondary { border-color: #1A7DC4 !important; }
+.btn-secondary { background-color: #1A7DC4 !important; border-color: #1A7DC4 !important; color: #fff !important; }
+.btn-outline-secondary { color: #1A7DC4 !important; border-color: #1A7DC4 !important; }
+.btn-outline-secondary:hover { background-color: #1A7DC4 !important; color: #fff !important; }
+
 /*** Spinner Start ***/
 /*** Spinner ***/
 #spinner {
