@@ -3,6 +3,7 @@
 :root {
     --bs-secondary: #1A7DC4;
     --bs-secondary-rgb: 26, 125, 196;
+    --bs-light-gray: #F5F5F5;
 }
 
 .text-secondary { color: #1A7DC4 !important; }
@@ -184,7 +185,8 @@
 
 .topbar {
     padding: 2px 10px 2px 20px;
-    background: var(--bs-primary) !important;
+    background: #ffffff !important;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .topbar a,
@@ -351,7 +353,7 @@
 
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
-    background: linear-gradient(rgba(0, 58, 102, 0.9), rgba(0, 58, 102, 0.8)), url(../img/breadcrumb.png);
+    background: linear-gradient(rgba(0, 58, 102, 0.55), rgba(0, 58, 102, 0.45)), url(../img/breadcrumb.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: initial;
@@ -422,7 +424,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6));
+    background: linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, 0.35));
     background-size: cover;
 }
 
@@ -467,13 +469,15 @@
 
 .service .service-item .service-inner .service-title .service-content {
     position: absolute;
-    bottom: -100%; 
+    bottom: -100%;
     left: 0;
     margin-left: 30px;
     margin-right: 30px;
     text-align: center;
     border-radius: 10px;
-    background: var(--bs-primary);
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     opacity: 0;
     transition: 0.5s;
 }
@@ -484,7 +488,11 @@
 }
 
 .service .service-item .service-inner .service-title .service-content a h4 {
-    border-bottom: 1px solid rgba(256, 256, 256, .1);
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.service .service-item .service-inner .service-title .service-content p {
+    color: #555;
 }
 
 .service .service-item .service-inner .service-title .service-title-name {
@@ -621,11 +629,11 @@
 
 /*** Footer Start ***/
 .footer {
-    background: var(--bs-primary);
+    background: var(--bs-light-gray, #F5F5F5);
 }
 .footer .footer-item a {
     line-height: 30px;
-    color: var(--bs-white);
+    color: #333333;
     transition: 0.5s;
 }
 
@@ -643,8 +651,14 @@
 
 /*** copyright Start ***/
 .copyright {
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    background: var(--bs-secondary) !important;
+    border-top: 1px solid #e0e0e0;
+    background: #eeeeee !important;
+}
+
+.credentials-bar {
+    background: #f0f0f0;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
 }
 /*** copyright end ***/
 
@@ -691,7 +705,7 @@
     height: 12px;
     width: 12px;
     margin: 0 8px;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(0, 58, 102, 0.2);
     border-radius: 50%;
     display: inline-block;
     cursor: pointer;
